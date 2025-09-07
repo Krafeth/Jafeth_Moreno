@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Jafeth Moreno</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://kit.fontawesome.com/a2d9d5a64c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">Jafeth</div>
+    <nav class="nav" id="nav">
+      <a href="#about">Acerca de mí</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+  </header>
+
+  <!-- Acerca de mí -->
+  <section class="section about" id="about">
+    <img src="assets/profile.jpg" alt="Foto de Jafeth Moreno" class="profile-pic" />
+    <div class="about-text">
+      <h2>Acerca de mí</h2>
+      <p>
+        Buenas, mi nombre es <span class="highlight">Jafeth Moreno</span>. Nací en Cartagena de Indias y tengo 18 años.
+        Soy egresado de bachillerato (2024) y actualmente estudio <strong>Programación para Analítica de Datos</strong> en el SENA.
+        También participo en <strong>JovenescreaTIvos</strong> y aprendo de forma autodidacta sobre <strong>Inteligencia Artificial</strong> y <strong>Finanzas</strong>.
+      </p>
+      <p>
+        Me considero una persona relajada, con buen liderazgo y comunicación. Mi valor más fuerte es la <strong>justicia</strong>, y en mi tiempo libre disfruto del deporte, viajar y la música.
+      </p>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section class="section skills" id="skills">
+    <h2>Habilidades</h2>
+    <div class="skill"><span>HTML</span><div class="bar"><div class="fill" data-level="50"></div></div></div>
+    <div class="skill"><span>CSS</span><div class="bar"><div class="fill" data-level="75"></div></div></div>
+    <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" data-level="87"></div></div></div>
+    <div class="skill"><span>Buena comunicación</span><div class="bar"><div class="fill" data-level="90"></div></div></div>
+    <div class="skill"><span>Liderazgo</span><div class="bar"><div class="fill" data-level="85"></div></div></div>
+    <div class="skill"><span>Back-End</span><div class="bar"><div class="fill" data-level="70"></div></div></div>
+    <div class="skill"><span>Uso de IA</span><div class="bar"><div class="fill" data-level="80"></div></div></div>
+    <div class="skill"><span>Inglés B2</span><div class="bar"><div class="fill" data-level="65"></div></div></div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="section projects" id="projects">
+    <h2>Proyectos</h2>
+    <div class="filters">
+      <button data-filter="all">Todos</button>
+      <button data-filter="python">Python</button>
+      <button data-filter="web">Web</button>
+    </div>
+    <div class="cards">
+      <div class="card" data-category="python">
+        <h3>Gestión de Cuenta Bancaria</h3>
+        <p>Sistema en Python para manejar depósitos, retiros y cálculo de intereses.</p>
+        <button class="open-modal" data-target="modal1">Ver más</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Proyecto -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <button class="close-modal">&times;</button>
+      <h3>Gestión de Cuenta Bancaria</h3>
+      <p>
+        Proyecto en Python que gestiona cuentas con depósitos, retiros y cálculo de interés anual.
+        Está en proceso de conexión con MySQL y visualización con Power BI / Tableau.
+      </p>
+      <pre>
+class CuentaBancaria:
+    tasa_interes = 0.03
+    total_cuentas = 0
+    _siguiente_numero = 1
+      </pre>
+      <a href="projects/cuenta_bancaria.py" target="_blank">Ver código completo</a>
+    </div>
+  </div>
+
+  <!-- Blog -->
+  <section class="section blog" id="blog">
+    <h2>Blog</h2>
+    <div class="post">
+      <h3>Primer post</h3>
+      <p>Bienvenido a mi portafolio. Aquí compartiré avances en proyectos, estudios de IA y finanzas.</p>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="section contact" id="contact">
+    <h2>Contacto</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Nombre" />
+      <input type="email" id="email" placeholder="Correo electrónico" />
+      <textarea id="message" placeholder="Tu mensaje"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Email: <a href="mailto:Krafeth7@gmail.com">Krafeth7@gmail.com</a></p>
+    <p>
+      <a href="https://www.linkedin.com/in/jafeth-moreno-moreno-609950377" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Krafeth" target="_blank">GitHub</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Jafeth Moreno | Portafolio Personal</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
